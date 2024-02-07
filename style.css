@@ -1,0 +1,53 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;    
+}
+
+form {
+    display: grid;
+    grid-template-columns: 200px 200px ;
+    gap: 1em;
+}
+
+label {
+    grid-column: 1/2;
+}
+
+input {
+    grid-column: 2/3;
+}
+
+#allelic_mismatches{
+    background-color: #D8FFB1;
+}
+
+#antigen_mismatches{
+    background-color: #D8FFB1;
+}
+
+#button_div_in_form {
+   grid-column: 2/3;
+} 
+
+#instructions{
+    font-style: italic;
+    margin-bottom: 2em;
+}
+
+#results_title {
+    margin-top: 2em;
+}
+
+
+/* All the above applies for small screens from 0px to 599px. 
+The code below will happen at 600px and bigger screens. */
+@media (min-width: 600px) {
+    /* in progress  */
+
+}
+
+
+/* Note: Syntax for class selector */
+/* .center {
+    text-align: center;
+    color: green;
+    } */

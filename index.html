@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>HLA</title>
+  </head>
+  <body>
+    <h1>HLA Mismatch Calculator</h1>
+    <p id="instructions">
+      ~Placeholder text for instructions ... ~
+      <br />(Valid input examples: 04:15 or X or 04:PAYK etc)
+    </p>
+    <div id="div_form">
+      <form id="mainform">
+        <label for="patient_code1_input">Patient's first alelle:</label>
+        <input type="text" id="forminput_p_1" name="hlainput" />
+
+        <label for="patient_code2_input">Patient's second allele:</label>
+        <input type="text" id="forminput_p_2" name="hlainput" />
+
+        <label for="donor_code1_input">Donor's first allele:</label>
+        <input type="text" id="forminput_d_1" name="hlainput" />
+
+        <label for="donor_code2_input">Donor's second allele:</label>
+        <input type="text" id="forminput_d_2" name="hlainput" />
+
+        <div id="button_div_in_form">
+          <input type="button" id="submit_button" value="Click to Submit" />
+        </div>
+      </form>
+    </div>
+
+    <h2 id="results_title">RESULTS:</h2>
+
+    <div id="div_table">
+      <table id="maintable" border="1">
+        <tr>
+          <td></td>
+          <th>Locus</th>
+        </tr>
+        <tr>
+          <th rowspan="2">Patient</th>
+          <td id="result_p_code_1">-</td>
+        </tr>
+        <tr>
+          <td id="result_p_code_2">-</td>
+        </tr>
+        <tr>
+          <th rowspan="2">Donor</th>
+          <td id="result_d_code_1">-</td>
+        </tr>
+        <tr>
+          <td id="result_d_code_2">-</td>
+        </tr>
+        <tr>
+          <th id="antigen_header">Antigen # of Mismatches</th>
+          <td id="antigen_mismatches">-</td>
+        </tr>
+        <tr>
+          <th id="allele_header">Allelic # of Mismatches</th>
+          <td id="allelic_mismatches">-</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Link javascript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
