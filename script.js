@@ -15,10 +15,10 @@ let allelic_mismatches;
 
 function main_func(){
     // Variables for the four hla codes the user entered
-    let p_code_1 = forminput_p_1.value;
-    let p_code_2 = forminput_p_2.value;
-    let d_code_1 = forminput_d_1.value;
-    let d_code_2 = forminput_d_2.value;
+    let p_code_1 = forminput_p_1.value.trim();
+    let p_code_2 = forminput_p_2.value.trim();
+    let d_code_1 = forminput_d_1.value.trim();
+    let d_code_2 = forminput_d_2.value.trim();
 
     // Take care of special case of X
     // Replace X with homozygous allele
@@ -98,10 +98,10 @@ function main_func(){
     } 
     // Else, if first two digits DONT match, report allelic level as ND and report mismatch at antigen level
     else { 
-        allelic_mismatches = "ND"
-        if (String(arr_p.sort()) == String(arr_d.sort())){
+        allelic_mismatches = "ND";
+        if (String(arr_p_firstdigits.sort()) == String(arr_d_firstdigits.sort())){
             antigen_mismatches = "0";
-        } else if (arr_d.includes(p_code_1) == false && arr_d.includes(p_code_2) == false){
+        } else if (arr_d_firstdigits.includes(p_code_1_1) == false && arr_d_firstdigits.includes(p_code_2_1) == false){
             antigen_mismatches = "2";
         } else {
             antigen_mismatches = "1";
