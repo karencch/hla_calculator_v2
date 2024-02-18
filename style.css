@@ -1,54 +1,82 @@
 * {
     font-family: Arial, Helvetica, sans-serif;    
 }
-
 body {
     margin: 2em;
 }
-
 form {
     display: grid;
-    grid-template-columns: 200px 200px ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 1em;
 }
-
+h1 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
 label {
     grid-column: 1/2;
 }
-
 input {
     grid-column: 2/3;
 }
-
+table{
+    margin-right: auto;
+    margin-left: auto;
+}
 #allelic_mismatches{
     background-color: #D8FFB1;
 }
-
 #antigen_mismatches{
     background-color: #D8FFB1;
 }
-
 #button_div_in_form {
    grid-column: 2/3;
 } 
-
+#div-form{
+    display: grid;
+}
+#div-table{
+    display: grid;
+}
+#first-container{
+    margin-bottom: 6em;
+}
 #instructions{
     font-style: italic;
     margin-bottom: 2em;
 }
-
+#maintable{
+    /* display: flex; */
+}
 #results_title {
     margin-top: 2em;
 }
-
-
-/* All the above applies for small screens from 0px to 599px. 
-The code below will happen at 600px and bigger screens. */
-@media (min-width: 600px) {
-    /* in progress  */
-
+.first-container-class{
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
+/* All the above applies for small screens from 0px to 767px. 
+The code below will happen at 768px and bigger screens. */
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .first-container-class{
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .first-container-class{
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+}
 
 /* Note: Syntax for class selector */
 /* .center {

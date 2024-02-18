@@ -8,31 +8,44 @@
   </head>
   <body>
     <h1>HLA Mismatch Calculator</h1>
-    <p id="instructions">
-      ~ Placeholder text for instructions ... ~
-      <br />(Valid input examples: 04:15 or X or 04:PAYK etc)
-    </p>
-    <div id="div_form">
-      <form id="mainform">
-        <label for="patient_code1_input">Patient's first alelle:</label>
-        <input type="text" id="forminput_p_1" name="hlainput" />
 
-        <label for="patient_code2_input">Patient's second allele:</label>
-        <input type="text" id="forminput_p_2" name="hlainput" />
+    <div id="first-container">
+      <div class="first-container-class">
+        <p id="instructions">
+          ~ Placeholder text for instructions ... ~
+          <br />(Valid input examples: 04:15 or X or 04:PAYK etc)
+        </p>
+      </div>
+      <div class="first-container-class" id="div_form">
+        <form id="mainform">
+          <label for="patient_code1_input" class="title-allele"
+            >Patient's first alelle:</label
+          >
+          <input type="text" id="forminput_p_1" name="hlainput" />
 
-        <label for="donor_code1_input">Donor's first allele:</label>
-        <input type="text" id="forminput_d_1" name="hlainput" />
+          <label for="patient_code2_input" class="title-allele"
+            >Patient's second allele:</label
+          >
+          <input type="text" id="forminput_p_2" name="hlainput" />
 
-        <label for="donor_code2_input">Donor's second allele:</label>
-        <input type="text" id="forminput_d_2" name="hlainput" />
+          <label for="donor_code1_input" class="title-allele"
+            >Donor's first allele:</label
+          >
+          <input type="text" id="forminput_d_1" name="hlainput" />
 
-        <div id="button_div_in_form">
-          <input type="button" id="submit_button" value="Click to Submit" />
-        </div>
-      </form>
+          <label for="donor_code2_input" class="title-allele"
+            >Donor's second allele:</label
+          >
+          <input type="text" id="forminput_d_2" name="hlainput" />
+
+          <div id="button_div_in_form">
+            <input type="button" id="submit_button" value="Click to Submit" />
+          </div>
+        </form>
+      </div>
     </div>
 
-    <h2 id="results_title">RESULTS:</h2>
+    <h3 id="results_title">RESULTS:</h3>
 
     <div id="div_table">
       <table id="maintable" border="1">
