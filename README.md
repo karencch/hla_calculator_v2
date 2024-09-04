@@ -7,3 +7,9 @@ Note: The intended audience for this project is the data managers on my team.
 # How to access this project:
 (1) Download the respository and run locally, OR
 (2) Go to https://hlacalculator.netlify.app/
+
+# Sample input:
+01:01
+01:01
+01:01
+01:01
